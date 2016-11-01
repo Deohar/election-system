@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>voting system/ընտրած-հարցի-քվեարկության-էջ</title>
+    <link rel="stylesheet" type="text/css" href="E:\Programming\Full stack web developer\INSTIGATE\First_project-Voting-System\Mockup\CSS\Style.css">
+</head>
+<body>
+
+<!--  header as table   -->
+
+<ul>
+  <li><a class="active li-1" href="#voting-system.com">Voting-system.com</a></li>
+  <li><a class="li-2" href="#sign-in">Գրանցվել</a></li>
+  <li><a class="li-2" href="#log-in">Մուտք գործել</a></li>
+</ul>
+
+<!-- content -->
+
+<!-- more info on chosed issue -->
+
+<div class="container">
+    <div id="content">
+        <div>
+            <h1 class="question-header">Ընտրված հարցը</h1>
+        </div>
+        <div id="mainbar">
+            <div class="question-summary narrow tagged-interesting">
+                <div id="say-yes-width">
+                    <div class="say-yes">
+                        <div class="say-no">
+                            <span title="0 Այո">0</span>
+                        </div>
+                        <div>Այո</div>
+                    </div>
+
+                    <div class="status unanswered">
+                        <div class="say-no">
+                            <span title="0 ոչ">0</span>
+                        </div>
+
+                        <div>Ոչ</div>
+                    </div>
+
+                    <div class="delegated">
+                        <div class="say-no">
+                            <span title="4 փոխանցված ձայն">4</span>
+                        </div>
+                        <div>Փոխանցված ձայն</div>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <h3>
+                        <a href="" class="question-hyperlink" title="հարց"> Հարցի բովանդակություն </a>
+                    </h3>
+
+                    <div class="started">
+
+<!-- այստեղ սահմանելու ենք մեկնաբանություն անելու կոնկրետ ժամանակը -->
+
+                        <a href="" class="started-link">2016-10-31 01:35 <span title="">հեղինակ</span> </a>
+                    <a href="">Դավիթ Հարությունյան</a>
+                    </div>
+                </div>
+            </div>
+
+
+<!--Posting a comment-->
+        <form action="add_comment.php" method="POST" class="comment-padding">
+            <label for="name">Your Comment:</label>
+<!-- (needs to connect with form /needs to explore/)-->
+            <textarea id="comment" name="comment"></textarea>
+            <input type="hidden" name="news_id" value="<?php echo $news_id?>"/> <br>
+            <input type="submit" value="submit" name="save"/>
+        </form>
+
+
+<!-- this is other's comments code-->
+
+            <div id="answers">
+                <div id="answers-header">
+                    <div class="subheader answers-subheader">
+                        <h2>
+                            Մեկնաբանություններ
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-summary">
+                <div class=".narrow .summary">
+                    <div id="answer-40351829" class="answer" data-answerid="40351829">
+                        <table>
+                            <tbody>
+                                <td class="answercell">
+                                    <div class="post-text">
+                                        <p>
+                                            Մեկնաբանություն համար առաջին: Ցանկանում եմ նշել, որ Ձեր առաջարկած տարբերակը...
+                                        </p>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="user-details">
+                        <a href="" class="started-link">2016-10-31 01:35 </a>
+                        <a href="">Դավիթ Հարությունյան</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        </div>
+    </div>
+</div>              <!-- div of .container-->
+
+</body>
+</html>
